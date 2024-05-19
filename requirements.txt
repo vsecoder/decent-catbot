@@ -1,5 +1,4 @@
-aiogram==3.0.0b3
+aiogram==3.6.0
 tinydb
 asyncio
 aiohttp
-logging

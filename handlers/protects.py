@@ -1,6 +1,10 @@
-from aiogram import types
+from aiogram import types, Router
+from aiogram.filters import Command
+
+router = Router()
 
 
+@router.message(Command(commands=["protects"]))
 async def protects_handler(event: types.Message):
     if event.chat.id == event.from_user.id:
         return
